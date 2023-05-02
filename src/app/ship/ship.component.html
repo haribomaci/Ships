@@ -1,0 +1,20 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Név</th>
+        <th scope="col">Hossz</th>
+        <th scope="col">Ár</th>
+        <th scope="col">Személy</th>
+        <th scope="col">Trailer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let ship of ships">
+        <td>{{ship.name}}</td>
+        <td>{{ship.length}}</td>
+        <td>{{ship.price}}</td>
+        <td>{{ship.person}}</td>
+        <td>{{ship.trailer}}</td>
+      </tr>
+    </tbody>
+  </table>
