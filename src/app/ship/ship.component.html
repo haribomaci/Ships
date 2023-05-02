@@ -1,3 +1,30 @@
+<div class="container">
+    <h3>New Ship</h3>
+    <form [formGroup]="shipForm">
+      <div class="mb-3">
+        <label for="name" class="form-label">Név</label>
+        <input type="text" class="form-control" id="name" formControlName="name">
+      </div>
+      <div class="mb-3">
+        <label for="length" class="form-label">Hossz</label>
+        <input type="text" class="form-control" id="length" formControlName="length">
+      </div>
+      <div class="mb-3">
+        <label for="price" class="form-label">Ár</label>
+        <input type="text" class="form-control" id="price" formControlName="price">
+      </div>
+      <div class="mb-3">
+        <label for="person" class="form-label">Person</label>
+        <input type="text" class="form-control" id="person" formControlName="person">
+      </div>
+      <div class="mb-3">
+        <label for="trailer" class="form-label">Trailer</label>
+        <input type="text" class="form-control" id="trailer" formControlName="trailer">
+      </div>
+      <button type="button" class="btn btn-dark" (click)="onClick">New Ship</button>
+    </form>
+  </div>
+
 <table class="table table-striped">
     <thead>
       <tr>
@@ -18,3 +45,4 @@
       </tr>
     </tbody>
   </table>
+

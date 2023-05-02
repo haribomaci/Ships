@@ -33,4 +33,22 @@ getShips(){
     
   });
 }
+onClick() {
+  this.addShip();
+}
+
+addShip() {
+
+  let data = {
+    name: this.shipForm.value.name,
+  };
+
+  this.api.addShip(data).subscribe({
+    next: (data:any) => {
+      console.log("siker");
+    },
+    error: (err:any) => {
+    }
+  });
+}
 }
